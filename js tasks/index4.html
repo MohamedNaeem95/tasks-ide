@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js task1</title>
+</head>
+<body>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <input type="number" id="number3">
+    <button id="send" onclick="convert()">send</button>
+    <h3>Result: <span id="result">0</span></h3>
+    <script>
+        function points() {
+            var win = parseInt(document.getElementById('number1').value),
+                draw = parseInt(document.getElementById('number2').value),
+                lose = parseInt(document.getElementById('number3').value),
+            output = (win*3) + (draw*1) + (lose*0);
+            return output;
+        }
+        function convert() {
+            document.getElementById('result').innerHTML = points();
+        }
+    </script>
+</body>
+</html>

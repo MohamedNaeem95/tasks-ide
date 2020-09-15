@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problem 4</title>
+</head>
+<body>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <button id="send" onclick="printResult()">send</button>
+    <h3>Result: <span id="result">0</span></h3>
+    <script>
+        function riseDown() {
+            var n1 = parseFloat(document.getElementById('number1').value),
+                n2 = parseFloat(document.getElementById('number2').value),
+                output = n1-n2;
+        }
+        function printResult() {
+            document.getElementById('result').innerHTML = riseDown();
+        }
+    </script>
+</body>
+</html>
